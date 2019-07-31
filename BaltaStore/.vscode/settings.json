@@ -1,0 +1,33 @@
+{
+    "editor.fontSize": 14,
+    "editor.tokenColorCustomizations": {
+        "functions": "",
+        "comments": "",
+        "variables": "",
+        "types": "",        
+        "keywords": "",
+        "textMateRules": [
+            {
+                "scope": "entity.name.type",
+                "settings": {
+                    "fontStyle": ""
+                },
+            },
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": ""
+                },
+            },
+            {
+                "scope": "",
+                "settings": {
+                    "foreground": ""
+                }
+            },
+        ],
+    },
+    
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "vscode-icons",
+}
