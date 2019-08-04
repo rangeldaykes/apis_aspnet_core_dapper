@@ -18,7 +18,9 @@ namespace BaltaStore.Tests
                 "Rua vai e vem, 123"
             );            
 
-            
+            var order = new Order(c);
+            //order.AddItem()
+
         }
     }
 }
