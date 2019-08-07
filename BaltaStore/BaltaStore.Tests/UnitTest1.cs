@@ -7,7 +7,7 @@ namespace BaltaStore.Tests
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
+        //[TestMethod]
         public void TestMethod1()
         {
             var name = new Name("José", "Lelé");
