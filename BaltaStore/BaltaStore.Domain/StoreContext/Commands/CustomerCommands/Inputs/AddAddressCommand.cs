@@ -1,3 +1,4 @@
+using System;
 using BaltaStore.Domain.StoreContext.Enums;
 
 namespace BaltaStore.Domain.StoreContext.CustomerCommands.Inputs
