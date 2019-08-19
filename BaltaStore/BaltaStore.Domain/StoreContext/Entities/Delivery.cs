@@ -1,9 +1,10 @@
 using System;
 using BaltaStore.Domain.StoreContext.Enums;
+using BaltaStore.Shared.Entities;
 
 namespace BaltaStore.Domain.StoreContext.Entities
 {
-    public class Delivery
+    public class Delivery : Entity
     {
         public Delivery(DateTime estimateDeliveryDate)
         {
