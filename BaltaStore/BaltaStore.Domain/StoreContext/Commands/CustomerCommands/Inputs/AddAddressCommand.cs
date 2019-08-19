@@ -20,7 +20,7 @@ namespace BaltaStore.Domain.StoreContext.CustomerCommands.Inputs
 
         public bool IsValid()
         {
-            throw new NotImplementedException();
+            return Valid;
         }
     }
 }
