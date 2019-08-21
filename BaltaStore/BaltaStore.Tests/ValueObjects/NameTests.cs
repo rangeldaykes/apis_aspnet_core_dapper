@@ -2,13 +2,13 @@ using BaltaStore.Domain.StoreContext.Entities;
 using BaltaStore.Domain.StoreContext.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BaltaStore.Tests
+namespace BaltaStore.Tests.ValueObjects
 {
     [TestClass]
     public class NameTests // <-- não há necessidade de testar pq o flunt já foi testado
     {
         [TestMethod]
-        public void ShoulReturnNotification_WhenNameIsNotValid()
+        public void ShouldReturnNotification_WhenNameIsNotValid()
         {
             var name = new Name("", "lelé");
             Assert.AreEqual(false, name.Valid);

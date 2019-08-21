@@ -3,7 +3,7 @@ using BaltaStore.Domain.StoreContext.Enums;
 using BaltaStore.Domain.StoreContext.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BaltaStore.Tests
+namespace BaltaStore.Tests.Entities
 {
     [TestClass]
     public class OrderTests

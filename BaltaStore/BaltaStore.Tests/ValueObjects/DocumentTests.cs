@@ -2,7 +2,7 @@ using BaltaStore.Domain.StoreContext.Entities;
 using BaltaStore.Domain.StoreContext.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BaltaStore.Tests
+namespace BaltaStore.Tests.ValueObjects
 {
     [TestClass]
     public class DocumentTests
@@ -16,7 +16,7 @@ namespace BaltaStore.Tests
         }
 
         [TestMethod]
-        public void ShoulReturnNotification_WhenDocumentIsNotValid()
+        public void ShouldReturnNotification_WhenDocumentIsNotValid()
         {
             Assert.AreEqual(false, invalidDocument.Valid);
             Assert.AreEqual(1, invalidDocument.Notifications.Count);

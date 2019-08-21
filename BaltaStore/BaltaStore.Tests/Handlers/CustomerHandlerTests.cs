@@ -1,13 +1,15 @@
 using BaltaStore.Domain.StoreContext.CustomerCommands.Inputs;
+using BaltaStore.Domain.StoreContext.Handlers;
+using BaltaStore.Tests.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BaltaStore.Tests.Commands
+namespace BaltaStore.Tests.Handlers
 {
     [TestClass]
-    public class CreateCustomerCommandTests
+    public class CustomerHandlerTests
     {
         [TestMethod]
-        public void ShouldValidate_WhenCommandIsValid()
+        public void ShouldRegisterCustomer_WhenCommandIsValid()
         {
             var command = new CreateCustomerCommand();
             command.FirstName =  "José";
@@ -16,7 +18,9 @@ namespace BaltaStore.Tests.Commands
             command.Email =  "lele@email.com";
             command.Phone =  "4199999999";
 
-            Assert.AreEqual(true, command.Valid);            
-        }   
+            Assert.AreEqual(true, command.Valid);    
+
+            var handler = new CustomerHandler(new FakeCustomerRepository(), new FakeEmailService());
+        }
     }
 }
