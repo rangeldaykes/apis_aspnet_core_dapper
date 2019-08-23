@@ -6,6 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.60.9" />
+    <PackageReference Include="Npgsql" Version="4.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaltaStore.Domain\BaltaStore.Domain.csproj" />
   </ItemGroup>
 
 </Project>
